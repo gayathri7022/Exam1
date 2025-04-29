@@ -54,7 +54,7 @@ print(register("Gayathri", "gaythri@gmail", "12345dfg"))        #Invalid email
 print(register("Gayathri", "gaythri@gmail.com", "12345ab"))     #Password must be 8 characters long
 
 
-print(view_menu("tiffin", "vada", "001"))       #vada Price = 20 Order placed succesfully Total price: 20
+
 
 print(view_menu("tiffin", "kesari", "002"))     #kesari is not available in tiffin
 
