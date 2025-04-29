@@ -1,5 +1,4 @@
 customer = {
-    "001" : 0
 }
 
 menu = ["tiffin", "meals", "sweets"]
@@ -61,14 +60,6 @@ print(view_menu("tiffin", "kesari", "002"))     #kesari is not available in tiff
 
 print(view_menu("meals", "north indian", "003"))    #north indian Price = 120 Order placed succesfully Total price: 120
 
-print(view_menu("meals", "thali", "001"))       #thali is not available in meals
-
-print(view_menu("sweets", "jamun", "001"))      #jamun Price = 20 Order placed succesfully Total price: 40
-
-print(view_menu("desserts", "cake", "004"))     #desserts not available
-
-
-            
         
 
 

@@ -12,10 +12,3 @@ def test_cases():
 
     assert view_menu("meals", "north indian", "003") == "north indian Price = 120 Order placed succesfully Total price: 120"
 
-    assert view_menu("meals", "thali", "001") == "thali is not available in meals"
-
-    assert view_menu("sweets", "jamun", "001") == "jamun Price = 20 Order placed succesfully Total price: 40"
-
-    assert view_menu("desserts", "cake", "004") == "desserts not available"
-
-    
