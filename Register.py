@@ -39,11 +39,8 @@ def view_menu(food_type, item, cid):
         food_type = food_type.lower()
         item = item.lower()
         if item in food[food_type]:
-            if cid in customer:
-                customer[cid] += food[food_type][item]
-            else:
-                customer[cid] = food[food_type][item]
-            return f"{item} Price = {food[food_type][item]} Order placed succesfully Total price: {customer[cid]}"
+            
+            return f"{item} Total price = {food[food_type][item]} Order placed succesfully "
             
         else:
             return f"{item} is not available in {food_type}"
