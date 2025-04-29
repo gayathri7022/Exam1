@@ -32,7 +32,7 @@ def register(name, email, password):
     return "Invalid email"
 
 
-def view_menu(food_type, item, cid):
+def view_menu(food_type, item):
     if food_type not in menu:
         return f"{food_type} not available"
     else:
@@ -40,7 +40,7 @@ def view_menu(food_type, item, cid):
         item = item.lower()
         if item in food[food_type]:
             
-            return f"{item} Total price = {food[food_type][item]} Order placed succesfully "
+            return f"{item} Total price = {food[food_type][item]}"
             
         else:
             return f"{item} is not available in {food_type}"
@@ -53,10 +53,9 @@ print(register("Gayathri", "gaythri@gmail.com", "12345ab"))     #Password must b
 
 
 
-print(view_menu("tiffin", "kesari", "002"))     #kesari is not available in tiffin
+print(view_menu("tiffin", "kesari"))     #kesari is not available in tiffin
 
-print(view_menu("meals", "north indian", "003"))    #north indian Price = 120 Order placed succesfully Total price: 120
-
+print(view_menu("meals", "north indian"))  
         
 
 
