@@ -8,7 +8,7 @@ def test_cases():
 
     
 
-    assert view_menu("tiffin", "kesari", "002") == "kesari is not available in tiffin"
+    assert view_menu("tiffin", "kesari") == "kesari is not available in tiffin"
 
-    assert view_menu("meals", "north indian", "003") == "north indian Total price = 120"
+    assert view_menu("meals", "north indian") == "north indian Total price = 120"
 
