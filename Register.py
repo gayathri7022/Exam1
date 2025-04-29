@@ -34,7 +34,6 @@ def register(name, email, password):
 
 
 def view_menu(food_type, item, cid):
-    global customer
     if food_type not in menu:
         return f"{food_type} not available"
     else:
