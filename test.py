@@ -1,14 +1,11 @@
-from Register import register, view_menu
+from Register import view_menu
 
 def test_cases():
-    assert register("Gayathri", "gaythri@gmail.com", "12345dfg") == "Registeration successfull"
-    assert register("Gayathri", "gaythri@gmail", "12345dfg") ==  "Invalid email"   #Invalid email
-    assert register("Gayathri", "gaythri@gmail.com", "12345ab") == "Password must be 8 characters long"     #Password must be 8 characters long
+    assert view_menu("001", "tiffin", "vada", 2) == "Order placed succesfully. For Vada price : 20. Total price : 40"
+    assert view_menu("001", "tiffin", "dosa", 1) == "Order placed succesfully. For Dosa price : 30. Total price : 70"
+    assert view_menu("002", "desserts", "cake", 1) == "desserts not available"
+    assert view_menu("004", "Meals", "Thali", 3) == "thali is not available in meals"
 
 
-    
-
-    assert view_menu("tiffin", "kesari") == "kesari is not available in tiffin"
-
-    assert view_menu("meals", "north indian") == "north indian Total price = 120"
-
+test_cases()
+print("All tests passed")
