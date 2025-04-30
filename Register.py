@@ -54,9 +54,9 @@ def view_menu(customer_id, food_type, item, quantity):
             
         
 
-# print(register("Gayathri", "gaythri@gmail.com", "12345dfg"))    #Registeration successfull
-# print(register("Gayathri", "gaythri@gmail", "12345dfg"))        #Invalid email
-# print(register("Gayathri", "gaythri@gmail.com", "12345ab"))     #Password must be 8 characters long
+print(register("Gayathri", "gaythri@gmail.com", "12345dfg"))    #Registeration successfull
+print(register("Gayathri", "gaythri@gmail", "12345dfg"))        #Invalid email
+print(register("Gayathri", "gaythri@gmail.com", "12345ab"))     #Password must be 8 characters long
 
 print(view_menu("001", "tiffin", "vada", 2))     #Order placed succesfully. For Vada price = 20. Total price = 40
 print(view_menu("001", "tiffin", "dosa", 1))     #Order placed succesfully. For Dosa price = 30. Total price = 70
